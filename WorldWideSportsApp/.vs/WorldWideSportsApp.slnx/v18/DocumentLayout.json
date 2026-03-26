@@ -1,21 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\",
+  "WorkspaceRootPath": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportslibrary\\pgatournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\bfrit\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\bfrit\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|c:\\users\\bfrit\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportslibrary\\pgatournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|solutionrelative:worldwidesportslibrary\\pgatournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportslibrary\\pgaplayerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|c:\\users\\bfrit\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportslibrary\\pgaplayerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|solutionrelative:worldwidesportslibrary\\pgaplayerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportslibrary\\nflgames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|c:\\users\\bfrit\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportslibrary\\nflgames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|solutionrelative:worldwidesportslibrary\\nflgames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportslibrary\\nflplayers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|c:\\users\\bfrit\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportslibrary\\nflplayers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D486BD00-B50C-4EAB-BC83-B7FC3ADEBE04}|WorldWideSportsLibrary\\WorldWideSportsLibrary.csproj|solutionrelative:worldwidesportslibrary\\nflplayers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,67 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WorldWideSportsApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-26T01:13:59.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WorldWideSportsApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-26T01:12:41.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PGATournament.cs",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\PGATournament.cs",
+              "DocumentMoniker": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\PGATournament.cs",
               "RelativeDocumentMoniker": "WorldWideSportsLibrary\\PGATournament.cs",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\PGATournament.cs",
+              "ToolTip": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\PGATournament.cs",
               "RelativeToolTip": "WorldWideSportsLibrary\\PGATournament.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAADkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAA+wDkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-25T20:20:48.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PGAPlayerStats.cs",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\PGAPlayerStats.cs",
+              "DocumentMoniker": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\PGAPlayerStats.cs",
               "RelativeDocumentMoniker": "WorldWideSportsLibrary\\PGAPlayerStats.cs",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\PGAPlayerStats.cs",
+              "ToolTip": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\PGAPlayerStats.cs",
               "RelativeToolTip": "WorldWideSportsLibrary\\PGAPlayerStats.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T20:19:54.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T20:19:54.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "NFLGames.cs",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\NFLGames.cs",
+              "DocumentMoniker": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\NFLGames.cs",
               "RelativeDocumentMoniker": "WorldWideSportsLibrary\\NFLGames.cs",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\NFLGames.cs",
+              "ToolTip": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\NFLGames.cs",
               "RelativeToolTip": "WorldWideSportsLibrary\\NFLGames.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAAAG0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T20:17:48.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T20:17:48.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "NFLPlayers.cs",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\NFLPlayers.cs",
+              "DocumentMoniker": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\NFLPlayers.cs",
               "RelativeDocumentMoniker": "WorldWideSportsLibrary\\NFLPlayers.cs",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\NFLPlayers.cs",
+              "ToolTip": "C:\\Users\\bfrit\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsLibrary\\NFLPlayers.cs",
               "RelativeToolTip": "WorldWideSportsLibrary\\NFLPlayers.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T20:17:28.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T20:17:28.649Z"
             }
           ]
         }

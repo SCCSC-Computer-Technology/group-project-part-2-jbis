@@ -17,7 +17,6 @@ namespace WorldWideSportsLibrary
         public int Round4 { get; set; }
         public int Total { get; set; }
         public double Earnings { get; set; }
-        public int FedXPoints { get; set; }
 
         public PGATournament()
         {
@@ -32,10 +31,9 @@ namespace WorldWideSportsLibrary
             Round4 = 0;
             Total = 0;
             Earnings = 0.00;
-            FedXPoints = 0;
         }
         public PGATournament(int season, string tournament, string location, string position, string score,
-            int round1, int round2, int round3, int round4, int total, double earnings, int fedXPoints)
+            int round1, int round2, int round3, int round4, int total, double earnings)
         {
             Season = season;
             Tournament = tournament;
@@ -48,12 +46,11 @@ namespace WorldWideSportsLibrary
             Round4 = round4;
             Total = total;
             Earnings = earnings;
-            FedXPoints = fedXPoints;
         }
         public override string ToString()
         {
             return $"Season: {Season} \nTournament: {Tournament} \nLocation: {Location} \nPosition {Position} \nScore {Score}" +
-                $" \nRound Scores: {Round1}, {Round2}, {Round3}, {Round4} \nTotal: {Total} \nEarnings: {Earnings} \nFedXPoints: {FedXPoints}";
+                $" \nRound Scores: {Round1}, {Round2}, {Round3}, {Round4} \nTotal: {Total} \nEarnings: {Earnings}";
         }
     }
 }

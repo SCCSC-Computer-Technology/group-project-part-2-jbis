@@ -7,20 +7,20 @@ namespace WorldWideSportsLibrary
     public class PGAPlayerStats
     {
         //Fields
-        public string PlayerName { get; set; }
         public int Season { get; set; }
+        public string PlayerName { get; set; }
+        public int EventsPlayed { get; set; }
         public int Wins { get; set; }
         public int TopTenFinish { get; set; }
         public double AverageScore { get; set; }
-        public int EventsPlayed { get; set; }
         public int TotalEarnings { get; set; }
         public int TotalFedXPoints { get; set; }
 
         //Default
         public PGAPlayerStats()
         {
-            PlayerName = "";
             Season = 2000;
+            PlayerName = "";
             Wins = 0;
             TopTenFinish = 0;
             AverageScore = 0;
@@ -29,11 +29,11 @@ namespace WorldWideSportsLibrary
             TotalFedXPoints = 0;
         }
         //Constructor
-        public PGAPlayerStats(string playerName, int season, int wins, int topTenFinish, double average, int eventsPlayed,
+        public PGAPlayerStats(int season, string playerName, int eventsPlayed, int wins, int topTenFinish, double average,
             int totalEarnings, int totalFedXPoints)
         {
-            PlayerName = playerName;
             Season = season;
+            PlayerName = playerName;
             Wins = wins;
             TopTenFinish = topTenFinish;
             AverageScore = average;
@@ -44,7 +44,7 @@ namespace WorldWideSportsLibrary
         //Override toString to output the class
         public override string ToString()
         {
-            return "Player Name: " + PlayerName + " \nSeason Played: " + Season + " \nWins: " + Wins + " \nTop 10 Finishes: "
+            return " \nSeason Played: " + Season + "Player Name: " + PlayerName + " \nWins: " + Wins + " \nTop 10 Finishes: "
                 + TopTenFinish + " \nAverage Scores: " + AverageScore.ToString("F2") + " \nEvents Played: " + EventsPlayed
                 + " \nTotal Earnings: " + TotalEarnings.ToString("C") + " \nTotal Fedex Points: " + TotalFedXPoints.ToString("N0");
         }

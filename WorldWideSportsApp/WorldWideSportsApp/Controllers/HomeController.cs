@@ -48,7 +48,7 @@ namespace WorldWideSportsApp.Controllers
             // Pull 10 PGA tournaments
             //i pulled only each instance of a tournament based on the position
             var pgaCmd = new SqlCommand(
-                "SELECT TOP 10 season, tournament, location, position, score, " +
+                "SELECT TOP 12 season, tournament, location, position, score, " +
                 "round1, round2, round3, round4, total, earnings " +
                 "FROM PGA_ALL_TOURNAMENTS " +
                 "WHERE position = '1' " +

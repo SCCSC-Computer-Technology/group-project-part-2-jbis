@@ -10,3 +10,15 @@ C:\Users\pcgen\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSpor
 C:\Users\pcgen\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\refint\WorldWideSportsLibrary.dll
 C:\Users\pcgen\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\WorldWideSportsLibrary.pdb
 C:\Users\pcgen\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\ref\WorldWideSportsLibrary.dll
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\bin\Debug\net10.0\WorldWideSportsLibrary.deps.json
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\bin\Debug\net10.0\WorldWideSportsLibrary.dll
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\bin\Debug\net10.0\WorldWideSportsLibrary.pdb
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\WorldWideSportsLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\WorldWideSportsLibrary.AssemblyInfoInputs.cache
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\WorldWideSportsLibrary.AssemblyInfo.cs
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\WorldWideSportsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\WorldWideSportsLibrary.sourcelink.json
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\WorldWideSportsLibrary.dll
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\refint\WorldWideSportsLibrary.dll
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\WorldWideSportsLibrary.pdb
+C:\Users\bfrit\OneDrive\Documents\GitHub\group-project-part-2-jbis\WorldWideSportsApp\WorldWideSportsLibrary\obj\Debug\net10.0\ref\WorldWideSportsLibrary.dll

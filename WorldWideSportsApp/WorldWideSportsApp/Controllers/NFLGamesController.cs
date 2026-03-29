@@ -27,7 +27,7 @@ public class NFLGamesController : Controller
                 reader["season"].ToString()!,
                 Convert.ToByte(reader["week"]),
                 Convert.ToDateTime(reader["gameday"]),
-                TimeSpan.Parse(reader["gametime"].ToString())!,
+                TimeSpan.Parse(reader["gametime"].ToString()),
                 reader["away_team"].ToString()!,
                 reader["home_team"].ToString()!,
                 reader["stadium"].ToString()!,
@@ -40,6 +40,10 @@ public class NFLGamesController : Controller
                 reader["referee"].ToString()!
             ));
         }
+
+
+
+
         return View(games);
     }
 }

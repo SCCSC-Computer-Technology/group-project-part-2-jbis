@@ -21,7 +21,7 @@ public class PGATournamentController : Controller
         {
             tournaments.Add(new PGATournament(
                 Convert.ToInt32(reader["season"]),
-                reader["tournament_name"].ToString()!,
+                reader["tournament"].ToString()!,
                 reader["location"].ToString()!,
                 reader["position"].ToString()!,
                 reader["score"].ToString()!,

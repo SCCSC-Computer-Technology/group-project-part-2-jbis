@@ -1,12 +1,15 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var games = ViewBag.Games as List<WorldWideSportsLibrary.NFLGames>;
+    var tournaments = ViewBag.Tournaments as List<WorldWideSportsLibrary.PGATournament>;
 }
 
-<style>body {background-color:lightblue }</style>
+
 
 <div class="text-center">
     <h1 style="font-family: Cooper" class="display-4">Welcome to World Wide Sports!</h1>
     <p style="font-family: 'Cooper'" class="lead">You can view the stats for your favorite NFL team or PGA golfer here!</p>
 </div>
-<img src="/images/NFL.png" class="rounded float-start w-50" alt="">
-<img src="/images/PGA-of-America-Symbol.png" class="rounded float-end w-50" alt="">
+
+<img src="/images/NFL.png" class="rounded float-start w-25" alt="">
+<img src="/images/PGA-of-America-Symbol.png" class="rounded float-end w-25" alt="">

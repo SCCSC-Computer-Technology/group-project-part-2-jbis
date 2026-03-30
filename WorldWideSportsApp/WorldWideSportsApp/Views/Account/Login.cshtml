@@ -1,0 +1,113 @@
+﻿@{
+Layout = null;
+ViewData["Title"] = "Login";
+}
+
+<style>
+    body {
+        background-color: #1a2a4a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .form {
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        width: 320px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #1a2a4a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        button:hover {
+            background-color: #2a3f6f;
+        }
+
+    .message {
+        text-align: center;
+        margin-top: 12px;
+        font-size: 0.85rem;
+    }
+
+        .message a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            .message a:hover {
+                text-decoration: underline;
+            }
+
+    .error {
+        color: red;
+        font-size: 0.85rem;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .register-form {
+        display: none;
+    }
+</style>
+
+<div class="form">
+
+    @if (ViewBag.Error != null)
+    {
+        <p class="error">@ViewBag.Error</p>
+    }
+
+    <!-- Login Form -->
+    <form class="login-form" method="post" action="/Account/Login">
+        @Html.AntiForgeryToken()
+        <input type="text" name="username" placeholder="username" />
+        <input type="password" name="password" placeholder="password" />
+        <button type="submit">login</button>
+        <p class="message">Not registered? <a href="#" onclick="toggleForms()">Create an account</a></p>
+        <p class="message"><a href="/Account/ForgotPassword">Forgot Password?</a></p>
+    </form>
+
+    <!-- Register Form -->
+    <form class="register-form" method="post" action="/Account/Register">
+        @Html.AntiForgeryToken()
+        <input type="text" name="username" placeholder="name" />
+        <input type="password" name="password" placeholder="password" />
+        <input type="password" name="confirmPassword" placeholder="confirm password" />
+        <button type="submit">create</button>
+        <p class="message">Already registered? <a href="#" onclick="toggleForms()">Sign In</a></p>
+    </form>
+
+</div>
+
+<script>
+    //this is the function that toggles between the login and register forms when the user clicks the links
+    function toggleForms() {
+        const login = document.querySelector('.login-form');
+        const register = document.querySelector('.register-form');
+        login.style.display = login.style.display === 'none' ? 'block' : 'none';
+        register.style.display = register.style.display === 'none' ? 'block' : 'none';
+    }
+</script>

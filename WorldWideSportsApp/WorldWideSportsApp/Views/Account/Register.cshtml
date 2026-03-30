@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Create Account";
+}
+
+<div class="login-container">
+    <h2>Create Account</h2>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert-error">@ViewBag.Error</div>
+    }
+
+    <form method="post" action="/Account/Register">
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required />
+        </div>
+
+        <button type="submit" class="btn-login">Create Account</button>
+    </form>
+
+    <div class="btn-row">
+        <a href="/Account/Login" class="btn-secondary">Back to Login</a>
+    </div>
+</div>

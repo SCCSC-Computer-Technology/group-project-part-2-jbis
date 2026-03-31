@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorldWideSportsLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff5cbd600f45ad0e42315bc13265c1cc38c9429a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa7bae520f7d3fcdf392516a59f270bd9c685791")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorldWideSportsLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorldWideSportsLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

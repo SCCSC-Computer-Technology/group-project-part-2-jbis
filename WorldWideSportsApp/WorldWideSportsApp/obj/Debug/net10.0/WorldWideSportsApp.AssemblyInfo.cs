@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("82c05768-b913-4ab1-bf93-60d3d597fbc8")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorldWideSportsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e71b632ebb814be29580628d4e88a1a00db37594")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa7bae520f7d3fcdf392516a59f270bd9c685791")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorldWideSportsApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorldWideSportsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

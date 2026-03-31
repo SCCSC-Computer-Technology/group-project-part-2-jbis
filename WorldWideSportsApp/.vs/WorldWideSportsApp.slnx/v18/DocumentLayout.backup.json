@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\views\\account\\verify.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\views\\account\\verify.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\views\\account\\forgot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\views\\account\\forgot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\views\\account\\email.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\views\\account\\email.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,68 +42,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "WorldWideSportsApp\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "WorldWideSportsApp\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T15:10:10.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "WorldWideSportsApp\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "WorldWideSportsApp\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T15:08:22.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Program.cs",
-              "RelativeDocumentMoniker": "WorldWideSportsApp\\Program.cs",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Program.cs",
-              "RelativeToolTip": "WorldWideSportsApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T14:58:03.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "WorldWideSportsApp\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Login.cshtml*",
-              "RelativeToolTip": "WorldWideSportsApp\\Views\\Account\\Login.cshtml*",
-              "ViewState": "AgIAADsAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WorldWideSportsApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAIwD4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T14:57:10.583Z",
+              "WhenOpened": "2026-03-30T23:54:33.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PasswordHelper.cs",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Helpers\\PasswordHelper.cs",
-              "RelativeDocumentMoniker": "WorldWideSportsApp\\Helpers\\PasswordHelper.cs",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Helpers\\PasswordHelper.cs",
-              "RelativeToolTip": "WorldWideSportsApp\\Helpers\\PasswordHelper.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACwAAABQAAAAAAAAAA==",
+              "Title": "Email.cshtml",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Email.cshtml",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Views\\Account\\Email.cshtml",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Email.cshtml",
+              "RelativeToolTip": "WorldWideSportsApp\\Views\\Account\\Email.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T23:28:35.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Forgot.cshtml",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Forgot.cshtml",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Views\\Account\\Forgot.cshtml",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Forgot.cshtml",
+              "RelativeToolTip": "WorldWideSportsApp\\Views\\Account\\Forgot.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T15:49:32.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Verify.cshtml",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Verify.cshtml",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Views\\Account\\Verify.cshtml",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Verify.cshtml",
+              "RelativeToolTip": "WorldWideSportsApp\\Views\\Account\\Verify.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T17:20:35.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WorldWideSportsApp\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAAAOAAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T14:36:38.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T15:08:22.877Z"
             }
           ]
         }

@@ -17,6 +17,10 @@ namespace WorldWideSportsApp.Controllers
         }
         public IActionResult Index()
         {
+            // If not logged in, kick them to login
+            if (HttpContext.Session.GetInt32("UserId") == null)
+                return RedirectToAction("Login", "Account");
+
             var games = new List<NFLGames>();
             var tournaments = new List<PGATournament>();
 
@@ -78,8 +82,13 @@ namespace WorldWideSportsApp.Controllers
             return View();
         }
 
+
+        //making sure that no user can access the privacy page without logging in first
         public IActionResult Privacy()
         {
+            if (HttpContext.Session.GetInt32("UserId") == null)
+                return RedirectToAction("Login", "Account");
+
             return View();
         }
 

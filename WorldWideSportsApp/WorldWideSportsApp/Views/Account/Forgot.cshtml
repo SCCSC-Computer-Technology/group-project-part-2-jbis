@@ -1,5 +1,97 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    Layout = null;
 }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reset Password</title>
+    <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: #1a2a4a;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .form {
+                background: white;
+                padding: 40px;
+                border-radius: 10px;
+                width: 320px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+                text-align: center;
+            }
+
+                .form h2 {
+                    color: #1a2a4a;
+                    margin-bottom: 8px;
+                    font-size: 1.2rem;
+                }
+
+                .form p.subtitle {
+                    color: #555;
+                    font-size: 0.85rem;
+                    margin-bottom: 20px;
+                }
+
+            input {
+                width: 100%;
+                padding: 10px;
+                margin: 8px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            button {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                background-color: #1a2a4a;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+            }
+
+                button:hover {
+                    background-color: #2a3f6f;
+                }
+
+            .error {
+                color: red;
+                font-size: 0.85rem;
+                margin-bottom: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div style="text-align:center; margin-bottom:20px;">
+            <img src="/images/WWS.png" width="250" height="90">
+        </div>
+
+        <h2>Reset Password</h2>
+        <p class="subtitle">Enter your new password below.</p>
+
+        @if (ViewBag.Error != null)
+        {
+            <p class="error">@ViewBag.Error</p>
+        }
+
+        <form method="post" action="/Account/ResetPassword">
+            @Html.AntiForgeryToken()
+            <input type="password" name="password" placeholder="New Password" />
+            <input type="password" name="confirmPassword" placeholder="Confirm New Password" />
+            <button type="submit">Change Password</button>
+        </form>
+    </div>
+</body>
+</html>

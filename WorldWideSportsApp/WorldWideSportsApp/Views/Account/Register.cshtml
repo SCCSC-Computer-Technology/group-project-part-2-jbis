@@ -1,37 +1,103 @@
 ﻿@{
-    ViewData["Title"] = "Create Account";
+    Layout = null;
 }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
 
-<div class="login-container">
-    <h2>Create Account</h2>
+            body {
+                background-color: #1a2a4a;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
 
-    @if (ViewBag.Error != null)
-    {
-        <div class="alert-error">@ViewBag.Error</div>
-    }
+            .form {
+                background: white;
+                padding: 40px;
+                border-radius: 10px;
+                width: 320px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            }
 
-    <form method="post" action="/Account/Register">
-        @Html.AntiForgeryToken()
+            input {
+                width: 100%;
+                padding: 10px;
+                margin: 8px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
 
-        <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required />
+            button {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                background-color: #1a2a4a;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+                button:hover {
+                    background-color: #2a3f6f;
+                }
+
+            .message {
+                text-align: center;
+                margin-top: 12px;
+                font-size: 0.85rem;
+            }
+
+                .message a {
+                    color: red;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+                    .message a:hover {
+                        text-decoration: underline;
+                    }
+
+            .error {
+                color: red;
+                font-size: 0.85rem;
+                text-align: center;
+                margin-bottom: 8px;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="form">
+        <div style="text-align:center; margin-bottom:20px;">
+            <img src="/images/WWS.png" width="250" height="90">
         </div>
 
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required />
-        </div>
+        @if (ViewBag.Error != null)
+        {
+            <p class="error">@ViewBag.Error</p>
+        }
 
-        <div class="form-group">
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required />
-        </div>
+        <form method="post" action="/Account/Register">
+            @Html.AntiForgeryToken()
+            <input type="text" name="username" placeholder="Username" />
+            <input type="password" name="password" placeholder="Password" />
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" />
+            <input type="email" name="email" placeholder="Email" />
+            <button type="submit">Create Account</button>
+            <p class="message">Already registered? <a href="/Account/Login">Sign In</a></p>
+        </form>
 
-        <button type="submit" class="btn-login">Create Account</button>
-    </form>
-
-    <div class="btn-row">
-        <a href="/Account/Login" class="btn-secondary">Back to Login</a>
     </div>
-</div>
+
+</body>
+</html>

@@ -4,13 +4,6 @@
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pcgen\\AppData\\Roaming\\Microsoft\\UserSecrets\\82c05768-b913-4ab1-bf93-60d3d597fbc8\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,7 +13,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -32,46 +25,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\appsettings.json",
-              "RelativeDocumentMoniker": "WorldWideSportsApp\\appsettings.json",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\appsettings.json",
-              "RelativeToolTip": "WorldWideSportsApp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-31T01:32:24.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\pcgen\\AppData\\Roaming\\Microsoft\\UserSecrets\\82c05768-b913-4ab1-bf93-60d3d597fbc8\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\82c05768-b913-4ab1-bf93-60d3d597fbc8\\secrets.json",
-              "ToolTip": "C:\\Users\\pcgen\\AppData\\Roaming\\Microsoft\\UserSecrets\\82c05768-b913-4ab1-bf93-60d3d597fbc8\\secrets.json",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\82c05768-b913-4ab1-bf93-60d3d597fbc8\\secrets.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\pcgen\\AppData\\Roaming\\Microsoft\\UserSecrets\\82c05768-b913-4ab1-bf93-60d3d597fbc8\\secrets.json*",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\82c05768-b913-4ab1-bf93-60d3d597fbc8\\secrets.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-31T01:31:55.174Z",
+              "WhenOpened": "2026-03-31T01:43:00.462Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\.gitignore",
-              "RelativeDocumentMoniker": "..\\.gitignore",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\.gitignore",
-              "RelativeToolTip": "..\\.gitignore",
-              "ViewState": "AgIAAFUBAAAAAAAAAAAAAGwBAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-31T01:29:31.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
             }
           ]
         }

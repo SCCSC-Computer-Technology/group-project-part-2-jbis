@@ -2,10 +2,11 @@
     ViewData["Title"] = "Home Page";
     var games = ViewBag.Games as List<WorldWideSportsLibrary.NFLGames>;
     var tournaments = ViewBag.Tournaments as List<WorldWideSportsLibrary.PGATournament>;
+    string? username = Context.Session.GetString("Username");
 }
 
 <style>
-    body { background-color: lightblue; }
+    body { background-color: #1a2a4a; }
 
     .sports-section {
         clear: both;
@@ -19,11 +20,10 @@
         text-align: center;
         margin-bottom: 1.2rem;
         padding-bottom: 0.4rem;
-        border-bottom: 3px solid brown;
-        color: #003366;
     }
 
-    .pga-title { border-color: green; color: #1a4731; }
+    .nfl-title { border-color: white; color: white; }
+    .pga-title { border-color: white; color: white; }
 
     .cards-grid {
         display: grid;
@@ -33,12 +33,12 @@
     }
 
     .card-item {
-        background: lightgreen;
+        background: white;
         border-radius: 12px;
         padding: 1rem 1.25rem;
         box-shadow: 0 4px 10px rgba(0,0,0,0.12);
         border-style: ridge;
-        border-color: darkgreen;
+        border-color: dodgerblue;
     }
 
     .card-item .teams {
@@ -55,24 +55,11 @@
         color: #555;
     }
 
-    .badge {
-        display: inline-block;
-        font-size: 0.7rem;
-        padding: 2px 8px;
-        border-radius: 20px;
-        margin-bottom: 0.4rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-family: Cooper;
-    }
-
-    .badge-nfl  { background: #003366; color: white; }
-    .badge-pga  { background: #1a4731; color: white; }
 </style>
 
 <div class="text-center">
-    <h1 style="font-family: Cooper" class="display-4, text-success">Welcome to World Wide Sports!</h1>
-    <p style="font-family: 'Cooper'" class="lead, text-success">You can view the stats for your favorite NFL team or PGA golfer here!</p>
+    <h1 style="font-family: Cooper" class="display-4, text-white">Welcome to World Wide Sports!</h1>
+    <p style="font-family: 'Cooper'" class="lead, text-white">You can view the stats for your favorite NFL team or PGA golfer here!</p>
 </div>
 
 <img src="/images/NFL.png" class="rounded float-start w-25" alt="">
@@ -80,7 +67,7 @@
 
 <!-- NFL Games -->
 <div class="sports-section">
-    <h2 class="section-title">🏈 Upcoming NFL Games — 2025 Season</h2>
+    <h2 class="section-title nfl-title">🏈 Upcoming NFL Games — 2025 Season</h2>
     <div class="cards-grid">
         @if (games != null && games.Count > 0)
         {

@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\views\\account\\favorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\views\\account\\favorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\controllers\\statscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\controllers\\statscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\views\\stats\\nfldetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\views\\stats\\nfldetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|c:\\users\\pcgen\\onedrive\\documents\\github\\group-project-part-2-jbis\\worldwidesportsapp\\worldwidesportsapp\\views\\stats\\pgadetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6FE453B-126A-8805-1ED4-71B3CA914A1C}|WorldWideSportsApp\\WorldWideSportsApp.csproj|solutionrelative:worldwidesportsapp\\views\\stats\\pgadetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +39,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WorldWideSportsApp\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAANsBAAAAAAAAAAAAAOsBAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T00:32:26.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Favorites.cshtml",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Favorites.cshtml",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Views\\Account\\Favorites.cshtml",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Account\\Favorites.cshtml",
+              "RelativeToolTip": "WorldWideSportsApp\\Views\\Account\\Favorites.cshtml",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAIcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-31T23:34:29.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StatsController.cs",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Controllers\\StatsController.cs",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Controllers\\StatsController.cs",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Controllers\\StatsController.cs",
+              "RelativeToolTip": "WorldWideSportsApp\\Controllers\\StatsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T23:14:36.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NflDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Stats\\NflDetails.cshtml",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Views\\Stats\\NflDetails.cshtml",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Stats\\NflDetails.cshtml",
+              "RelativeToolTip": "WorldWideSportsApp\\Views\\Stats\\NflDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-31T23:13:44.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PgaDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Stats\\PgaDetails.cshtml",
+              "RelativeDocumentMoniker": "WorldWideSportsApp\\Views\\Stats\\PgaDetails.cshtml",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\group-project-part-2-jbis\\WorldWideSportsApp\\WorldWideSportsApp\\Views\\Stats\\PgaDetails.cshtml",
+              "RelativeToolTip": "WorldWideSportsApp\\Views\\Stats\\PgaDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-31T23:13:02.828Z",
+              "EditorCaption": ""
             }
           ]
         }

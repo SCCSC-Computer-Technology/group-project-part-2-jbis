@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Set Your Favorites</title>
+    <title>Favorites</title>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -149,34 +149,33 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#nflTeamSelect').select2({
-                placeholder: 'Search for a team...',
-                allowClear: true,
-                width: '100%'
-            });
-
-            $('#pgaPlayerSelect').select2({
-                placeholder: 'Search for a player...',
-                placeholder: 'Type a player name...',
-                allowClear: true,
-                width: '100%',
-                minimumInputLength: 2,
-                ajax: 
-                {
-                    url: '/Account/SearchPgaPlayers',
-                    dataType: 'json',
-                    delay: 300,
-                    data: function (params) 
-                    {
-                        return { term: params.term };
-                    },
-                    processResults: function (data) 
-                    {
-                        return data;
-                    },
-                    cache: true
-                });
+        // NFL teams — fine to load all 32 upfront
+        $('#nflTeamSelect').select2({
+            placeholder: 'Search for a team...',
+            allowClear: true,
+            width: '100%'
         });
+
+        // PGA players loads based on user input to handle large dataset efficiently
+        $('#pgaPlayerSelect').select2({
+            placeholder: 'Type a player name...',
+            allowClear: true,
+            width: '100%',
+            minimumInputLength: 2,
+            ajax: {
+                url: '/Account/SearchPgaPlayers',
+                dataType: 'json',
+                delay: 300,
+                data: function (params) {
+                return { term: params.term };
+                },
+                processResults: function (data) {
+                return data;
+                },
+                cache: true
+            }
+        });
+});
     </script>
 </body>
 </html>

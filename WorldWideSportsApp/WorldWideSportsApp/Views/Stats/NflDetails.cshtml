@@ -1,5 +1,184 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<WorldWideSportsLibrary.NFLPlayers>
 @{
+    ViewData["Title"] = "NFL Player Stats";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<style>
+    body { background-color: #1a2a4a; }
+
+    .stats-wrapper { padding: 20px 30px; }
+
+    h2 {
+        color: white;
+        font-family: 'Cooper', serif;
+        margin-bottom: 20px;
+    }
+
+    .filter-bar {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        align-items: flex-end;
+    }
+
+    .filter-bar select,
+    .filter-bar input {
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: none;
+        font-size: 0.9rem;
+        min-width: 160px;
+    }
+
+    .filter-bar button {
+        padding: 8px 22px;
+        background: #c8102e;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    .filter-bar button:hover { background: #a00d24; }
+
+    .table-wrap { overflow-x: auto; }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        font-size: 0.88rem;
+    }
+
+    thead {
+        background-color: #1a2a4a;
+        color: white;
+    }
+
+    thead th {
+        padding: 12px 14px;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    tbody tr:nth-child(even) { background: #f2f4f8; }
+    tbody tr:hover { background: #dce3f0; }
+
+    tbody td {
+        padding: 10px 14px;
+        white-space: nowrap;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 2px 9px;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        color: white;
+        background: #1a2a4a;
+    }
+    .pos-QB { background: #c8102e; }
+    .pos-RB { background: #005f73; }
+    .pos-WR { background: #0a9396; }
+    .pos-TE { background: #6d4c41; }
+    .pos-K  { background: #7b2d8b; }
+
+    .no-data {
+        color: white;
+        text-align: center;
+        padding: 50px;
+        font-size: 1.1rem;
+    }
+</style>
+
+<div class="stats-wrapper">
+
+    <h2>🏈 NFL Player Stats</h2>
+
+    <form method="get" action="/Stats/NflDetails">
+        <div class="filter-bar">
+
+            <select name="season">
+                @foreach (var s in ViewBag.Seasons)
+                {
+                    if (s == (int)ViewBag.SelSeason)
+                    {
+                        <option value="@s" selected>@s Season</option>
+                    }
+                    else
+                    {
+                        <option value="@s">@s Season</option>
+                    }
+                }
+            </select>
+
+            <select name="team">
+                <option value="">All Teams</option>
+                @foreach (var t in ViewBag.Teams)
+                {
+                    if (t == ViewBag.SelTeam)
+                    {
+                        <option value="@t" selected>@t</option>
+                    }
+                    else
+                    {
+                        <option value="@t">@t</option>
+                    }
+                }
+            </select>
+
+            <input type="text"
+                   name="player"
+                   value="@ViewBag.SelPlayer"
+                   placeholder="Search player name..." />
+
+            <button type="submit">Filter</button>
+
+        </div>
+    </form>
+
+    <div class="table-wrap">
+        @if (Model.Any())
+        {
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Season</th>
+                        <th>Games Played</th>
+                        <th>Fantasy Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var p in Model)
+                    {
+                        <tr>
+                            <td><strong>@p.PlayerName</strong></td>
+                            <td>
+                                <span class="badge pos-@p.Position">@p.Position</span>
+                            </td>
+                            <td>@p.Team</td>
+                            <td>@p.Season</td>
+                            <td>@p.GamesPlayed</td>
+                            <td><strong>@p.FantasyPoints.ToString("F1")</strong></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="no-data">No players found for the selected filters.</p>
+        }
+    </div>
+
+</div>

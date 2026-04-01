@@ -90,6 +90,30 @@ namespace WorldWideSportsApp.Controllers
                 ViewBag.Error = "Please fill in all fields.";
                 return View();
             }
+            //if the password is not 8 characters
+            if (password.Length < 8)
+            {
+                ViewBag.Error = "Password must be at least 8 characters.";
+                return View();
+            }
+            //if the password does not have a cap character
+            if (!password.Any(char.IsUpper))
+            {
+                ViewBag.Error = "Password must contain at least one uppercase letter.";
+                return View();
+            }
+            //if the password does not have a number
+            if (!password.Any(char.IsDigit))
+            {
+                ViewBag.Error = "Password must contain at least one number.";
+                return View();
+            }
+            //if the password does not have a special character
+            if (!password.Any(c => "!@#$%^&*()_+-=[]{}|;':\",./<>?".Contains(c)))
+            {
+                ViewBag.Error = "Password must contain at least one special character (!@#$% etc).";
+                return View();
+            }
             //if passwords don't match, show error
             if (password != confirmPassword)
             {

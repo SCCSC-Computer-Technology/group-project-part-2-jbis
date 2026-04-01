@@ -1,0 +1,182 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Your Favorites</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a2a4a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            color: #1a2a4a;
+            margin-bottom: 6px;
+            font-size: 1.3rem;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 0.83rem;
+            margin-bottom: 28px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #1a2a4a;
+            margin-bottom: 6px;
+            margin-top: 20px;
+        }
+
+        /* Force Select2 to full width and match site style */
+        .select2-container {
+            width: 100% !important;
+        }
+
+        .select2-container--default .select2-selection--single {
+            height: 42px !important;
+            border: 1px solid #ccc !important;
+            border-radius: 6px !important;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            line-height: 42px !important;
+            color: #333;
+            padding-left: 4px;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 42px !important;
+            right: 8px;
+        }
+
+        .select2-container--default .select2-results__option--highlighted {
+            background-color: #1a2a4a !important;
+        }
+
+        .select2-search__field {
+            border: 1px solid #ccc !important;
+            border-radius: 4px !important;
+            padding: 6px 8px !important;
+            width: 100% !important;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 28px;
+            background-color: #1a2a4a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        button[type="submit"]:hover { background-color: #2a3f6f; }
+
+        .skip {
+            text-align: center;
+            margin-top: 14px;
+            font-size: 0.82rem;
+        }
+
+        .skip a { color: #1a2a4a; text-decoration: none; }
+        .skip a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div style="text-align:center; margin-bottom:20px;">
+            <img src="/images/WWS.png" width="250" height="90">
+        </div>
+
+        <h2>Welcome! Set Your Favorites</h2>
+        <p class="subtitle">You can change these anytime from your profile.</p>
+
+        <form method="post" action="/Account/Favorites">
+            @Html.AntiForgeryToken()
+
+            <label>🏈 Favorite NFL Team</label>
+            <select name="nflTeam" id="nflTeamSelect" style="width:100%">
+                <option value=""></option>
+                @foreach (var team in ViewBag.NflTeams)
+                {
+                    <option value="@team.Key">@team.Value</option>
+                }
+            </select>
+
+            <label>⛳ Favorite PGA Player</label>
+            <select name="pgaPlayer" id="pgaPlayerSelect" style="width:100%">
+                <option value=""></option>
+            </select>
+
+            <button type="submit">Save My Favorites</button>
+        </form>
+
+        <div class="skip">
+            <a href="/Home/Index">Skip for now</a>
+        </div>
+    </div>
+
+    <!-- jQuery must load before Select2 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#nflTeamSelect').select2({
+                placeholder: 'Search for a team...',
+                allowClear: true,
+                width: '100%'
+            });
+
+            $('#pgaPlayerSelect').select2({
+                placeholder: 'Search for a player...',
+                placeholder: 'Type a player name...',
+                allowClear: true,
+                width: '100%',
+                minimumInputLength: 2,
+                ajax: 
+                {
+                    url: '/Account/SearchPgaPlayers',
+                    dataType: 'json',
+                    delay: 300,
+                    data: function (params) 
+                    {
+                        return { term: params.term };
+                    },
+                    processResults: function (data) 
+                    {
+                        return data;
+                    },
+                    cache: true
+                });
+        });
+    </script>
+</body>
+</html>

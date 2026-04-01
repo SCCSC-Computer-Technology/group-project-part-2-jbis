@@ -76,7 +76,7 @@ namespace WorldWideSportsApp.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        //shows the registration page
+        //gets the registration page
         [HttpGet]
         public IActionResult Register() => View();
 
@@ -140,7 +140,7 @@ namespace WorldWideSportsApp.Controllers
             return RedirectToAction("Verify");
         }
 
-        //shows the verify page where user can enter the code they received in their email
+        //gets the verify page, if the user has a pending verification in session, if not redirects to login
         [HttpGet]
         public IActionResult Verify()
         {
@@ -221,22 +221,21 @@ namespace WorldWideSportsApp.Controllers
                 registerUpdateCmd.Parameters.AddWithValue("@UserId", userId);
                 registerUpdateCmd.ExecuteNonQuery();
 
+                //this will set the real session so the favorites page knows the user is logged in
+                HttpContext.Session.SetInt32("UserId", userId.Value);
+                HttpContext.Session.SetString("Username", username!);
+
                 HttpContext.Session.Remove("PendingVerifyUserId");
                 HttpContext.Session.Remove("PendingVerifyUsername");
                 HttpContext.Session.Remove("VerifyPurpose");
-                return RedirectToAction("Login");
+                return RedirectToAction("Favorites");
             }
         }
 
         //shows the email page when forgot password is clicked
         [HttpGet]
         public IActionResult ForgotPassword() => View("Email");
-
-        public IActionResult Logout()
-        {
-            HttpContext.Session.Clear();
-            return RedirectToAction("Login");
-        }
+        
 
         //deletes any accounts that were never verified and whose code has expired
         private void CleanupExpiredUnverifiedUsers(SqlConnection conn)
@@ -361,6 +360,150 @@ namespace WorldWideSportsApp.Controllers
             HttpContext.Session.Remove("VerifyPurpose");
 
             return RedirectToAction("Login");
+        }
+
+        //logout action that clears the session and redirects to login
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
+        }
+
+        [HttpGet]
+        public IActionResult Favorites()
+        {
+            // protect the page — must be logged in
+            int? userId = HttpContext.Session.GetInt32("UserId");
+            if (userId == null) return RedirectToAction("Login");
+
+            // load all NFL teams for the searchable dropdown
+            var nflTeams = new Dictionary<string, string>
+            {
+                {"ARI","Arizona Cardinals"},
+                {"ATL","Atlanta Falcons"},
+                {"BAL","Baltimore Ravens"},
+                {"BUF","Buffalo Bills"},
+                {"CAR","Carolina Panthers"},
+                {"CHI","Chicago Bears"},
+                {"CIN","Cincinnati Bengals"},
+                {"CLE","Cleveland Browns"},
+                {"DAL","Dallas Cowboys"},
+                {"DEN","Denver Broncos"},
+                {"DET","Detroit Lions"},
+                {"GB","Green Bay Packers"},
+                {"HOU","Houston Texans"},
+                {"IND","Indianapolis Colts"},
+                {"JAX","Jacksonville Jaguars"},
+                {"KC","Kansas City Chiefs"},
+                {"LAC","Los Angeles Chargers"},
+                {"LAR","Los Angeles Rams"},
+                {"LV","Las Vegas Raiders"},
+                {"MIA","Miami Dolphins"},
+                {"MIN","Minnesota Vikings"},
+                {"NE","New England Patriots"},
+                {"NO","New Orleans Saints"},
+                {"NYG","New York Giants"},
+                {"NYJ","New York Jets"},
+                {"PHI","Philadelphia Eagles"},
+                {"PIT","Pittsburgh Steelers"},
+                {"SEA","Seattle Seahawks"},
+                {"SF","San Francisco 49ers"},
+                {"TB","Tampa Bay Buccaneers"},
+                {"TEN","Tennessee Titans"},
+                {"WAS","Washington Commanders"}
+            };
+            ViewBag.NflTeams = nflTeams;
+
+            return View();
+        }
+
+        // the action when the use saves their favorite nfl team and pga player
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Favorites(string nflTeam, string pgaPlayer)
+        {
+            //get the current user id from session to know who to save the favorites for, if no user then redirect to login
+            int? userId = HttpContext.Session.GetInt32("UserId");
+            if (userId == null) return RedirectToAction("Login");
+
+            using var conn = new SqlConnection(_connString);
+            conn.Open();
+
+            //save NFL favorite (insert or update)
+            var nflCheck = new SqlCommand(
+                "SELECT COUNT(*) FROM FavoriteNFLTeams WHERE UserId = @uid", conn);
+            nflCheck.Parameters.AddWithValue("@uid", userId);
+            int nflExists = (int)nflCheck.ExecuteScalar();
+            //this will update the user if the already saved a favorite before, or insert a new record if they haven't
+            if (nflExists > 0)
+            {
+                var update = new SqlCommand(
+                    "UPDATE FavoriteNFLTeams SET TeamAbbr = @team WHERE UserId = @uid", conn);
+                update.Parameters.AddWithValue("@team", nflTeam);
+                update.Parameters.AddWithValue("@uid", userId);
+                update.ExecuteNonQuery();
+            }
+            else
+            {
+                var insert = new SqlCommand(
+                    "INSERT INTO FavoriteNFLTeams (UserId, TeamAbbr) VALUES (@uid, @team)", conn);
+                insert.Parameters.AddWithValue("@uid", userId);
+                insert.Parameters.AddWithValue("@team", nflTeam);
+                insert.ExecuteNonQuery();
+            }
+
+            //save PGA favorite (insert or update)
+            var pgaCheck = new SqlCommand(
+                "SELECT COUNT(*) FROM FavoritePGAPlayers WHERE UserId = @uid", conn);
+            pgaCheck.Parameters.AddWithValue("@uid", userId);
+            int pgaExists = (int)pgaCheck.ExecuteScalar();
+
+            //this will update the user if the already saved a favorite before, or insert a new record if they haven't
+            if (pgaExists > 0)
+            {
+                var update = new SqlCommand(
+                    "UPDATE FavoritePGAPlayers SET PlayerName = @player WHERE UserId = @uid", conn);
+                update.Parameters.AddWithValue("@player", pgaPlayer);
+                update.Parameters.AddWithValue("@uid", userId);
+                update.ExecuteNonQuery();
+            }
+            else
+            {
+                var insert = new SqlCommand(
+                    "INSERT INTO FavoritePGAPlayers (UserId, PlayerName) VALUES (@uid, @player)", conn);
+                insert.Parameters.AddWithValue("@uid", userId);
+                insert.Parameters.AddWithValue("@player", pgaPlayer);
+                insert.ExecuteNonQuery();
+            }
+
+            return RedirectToAction("Login");
+        }
+
+
+        //i made this for the pga players due to it crashing when I had too many players in the dropdown
+        [HttpGet]
+        public IActionResult SearchPgaPlayers(string term)
+        {
+            //this will only get the top 5 players based on the search term
+            var results = new List<object>();
+            using var conn = new SqlConnection(_connString);
+            conn.Open();
+            var cmd = new SqlCommand(
+                @"SELECT DISTINCT TOP 5 player_name 
+                FROM PGA_Player_Stats 
+                WHERE player_name LIKE @term 
+                ORDER BY player_name", conn);
+            cmd.Parameters.AddWithValue("@term", $"%{term}%");
+            var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                results.Add(new
+                {
+                    id = reader["player_name"].ToString(),
+                    text = reader["player_name"].ToString()
+                });
+            }
+            return Json(new { results });
         }
     }
 }

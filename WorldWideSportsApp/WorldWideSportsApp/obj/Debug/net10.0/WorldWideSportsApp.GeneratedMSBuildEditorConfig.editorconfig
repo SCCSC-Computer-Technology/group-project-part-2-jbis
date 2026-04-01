@@ -26,6 +26,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/pcgen/OneDrive/Documents/GitHub/group-project-part-2-jbis/WorldWideSportsApp/WorldWideSportsApp/Views/Account/Favorites.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGYXZvcml0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/pcgen/OneDrive/Documents/GitHub/group-project-part-2-jbis/WorldWideSportsApp/WorldWideSportsApp/Views/Account/Forgot.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,6 +60,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/pcgen/OneDrive/Documents/GitHub/group-project-part-2-jbis/WorldWideSportsApp/WorldWideSportsApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pcgen/OneDrive/Documents/GitHub/group-project-part-2-jbis/WorldWideSportsApp/WorldWideSportsApp/Views/Stats/NflDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcTmZsRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pcgen/OneDrive/Documents/GitHub/group-project-part-2-jbis/WorldWideSportsApp/WorldWideSportsApp/Views/Stats/PgaDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcUGdhRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/pcgen/OneDrive/Documents/GitHub/group-project-part-2-jbis/WorldWideSportsApp/WorldWideSportsApp/Views/_ViewImports.cshtml]
